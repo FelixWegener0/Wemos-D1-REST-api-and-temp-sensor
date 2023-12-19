@@ -128,6 +128,7 @@ void setup(void)
     // Set not found response
     server.onNotFound(handleNotFound);
     // Start server
+    server.enableCORS(true);
     server.begin();
     Serial.println("HTTP server started");
 }
